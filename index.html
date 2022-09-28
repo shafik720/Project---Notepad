@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notepad</title>
-    <!-- Bootstrap Css  -->
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <!-- Font Awesome Css  -->
     <link rel="stylesheet" href="assets/fontawesome/font-awesome.css">
     <!-- Custom Css  -->
@@ -15,44 +13,80 @@
 </head>
 <body>
     
-    <div class="container my-4">
-        <div id="heading" class="heading">
-            <h2>Create a Note</h2>
-        </div>
+  <div class="wrapper">
+    <li class="add-box">
+      <div class="icon"><i class="fa-solid fa-plus"></i></div>
+      <p>Add New Note</p>
+    </li>
 
-        <div id="row2" class="row my-4">
-          <div class="col-lg-8 mx-auto">
-            <div class=" border border-3 p-3">
-              <input type="text" id="noteTitle">
-              <textarea id="noteContent" class="form-control my-3" id="message-text"></textarea>
-              <button id="createBtn" type="button" class="btn btn-primary">Create</button>
-              <button id="editBtn" type="button">Save Edit</button>
-            </div>
+    <li class="note">
+      <div class="details">
+        <p>This is Title</p>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, cum! Libero quam a veritatis commodi molestias! Reprehenderit illum ratione illo.</span>
+      </div>
+      <div class="bottom-content">
+        <span>September 28, 2022</span>
+        <div class="settings">
+          <i class="fa-solid fa-ellipsis"></i>
+          <div class="menu">
+            <div class="menuBtn"><i class="fa-regular fa-pen-to-square"></i>Edit</div>
+            <div class="menuBtn"><i class="fa-regular fa-pen-to-square"></i>Delete</div>
           </div>
         </div>
-        
-        <div id="row" class="row g-3">
-            
-            <div class="col-lg-4">
-              <div class=" border border-3 rounded p-3 h-100 mb-5 note">
-                <div class=" ">
-                  <h4 class="noteTitle">Note Header - 2</h4>
-                  <hr>
-                  <p class="noteBody">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem quidem quasi praesentium dolorum perspiciatis. Vero cumque distinctio recusandae placeat quo sint iste, amet nesciunt sodi quasiaspernatur amet necessitatibus ducimus dolorum? Culpa voluptatum rerum nihil modi quasidi quasiaspernatur amet necessitatibus ducimus dolorum? Culpa voluptatum rerum nihil modi quasi</p>
-                </div>
-                <div class="cardFooter">
-                  <button type="button" class="btn btn-primary delete">Delete</button>
-                  <button type="button" class="btn btn-primary edit" >Edit</button>                  
-                </div>
-              </div>
-            </div>
+      </div>
+    </li>
+    <li class="note">
+      <div class="details">
+        <p>This is Title</p>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, cum! Libero quam a veritatis commodi molestias! Reprehenderit illum ratione illo.</span>
+      </div>
+      <div class="bottom-content">
+        <span>September 28, 2022</span>
+        <div class="settings">
+          <i class="fa-solid fa-ellipsis"></i>
         </div>
-    </div>    
+      </div>
+    </li>
+    <li class="note">
+      <div class="details">
+        <p>This is Title</p>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, cum! Libero quam a veritatis commodi molestias! Reprehenderit illum ratione illo.</span>
+      </div>
+      <div class="bottom-content">
+        <span>September 28, 2022</span>
+        <div class="settings">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+    </li>
+    <li class="note">
+      <div class="details">
+        <p>This is Title</p>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, cum! Libero quam a veritatis commodi molestias! Reprehenderit illum ratione illo.</span>
+      </div>
+      <div class="bottom-content">
+        <span>September 28, 2022</span>
+        <div class="settings">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+    </li>
+    <li class="note">
+      <div class="details">
+        <p>This is Title</p>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, cum! Libero quam a veritatis commodi molestias! Reprehenderit illum ratione illo.</span>
+      </div>
+      <div class="bottom-content">
+        <span>September 28, 2022</span>
+        <div class="settings">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+    </li>
+  </div>
 
 
-
+    
     <script src="assets/js/app.js"></script>
-    <!-- Bootstrap js  -->
-    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
