@@ -41,3 +41,13 @@ body{
     padding: 6px;
     border-top: 2px solid #74236593;
 }
+
+#row2{
+    display: none;
+}
+#editBtn{
+    outline: none;
+    background: #742365;
+    color: white;
+    padding: 5px 10px;
+}
