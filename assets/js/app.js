@@ -2,10 +2,11 @@
 const row = document.getElementById('row');
 const heading = document.getElementById('heading');
 const noteTitle = document.getElementById('recipient-name')
-// const noteTitles = noteTitle.value;
 const noteBody = document.getElementById('message-text');
-// const noteBodys = noteBody.value; 
 const saveBtn = document.getElementById('saveBtn');
+const edit = document.getElementById('edit');
+let noteHeaders = document.getElementsByClassName('noteTitle');
+let noteBodies = document.getElementsByClassName('noteBody');
 
 saveBtn.addEventListener('click',function(){
     let div = document.createElement('div');
@@ -24,7 +25,22 @@ saveBtn.addEventListener('click',function(){
       </div>
     `;
     row.appendChild(div);
-    }
-    
+    }    
+})
+
+// making edit button functionable
+edit.addEventListener('click', function(event){
+  let noteHeaderText;
+  let noteBodyText;
+  for(let noteHeader of noteHeaders){
+    noteHeaderText = noteHeader.innerText;    
+  }
+  for(let noteBody of noteBodies){
+    noteBodyText = noteBody.innerText;
+  }
+  noteTitle.value = noteHeaderText;
+  noteBody.value = noteBodyText;
+  console.log(noteHeaderText);  
+  // console.log(event.target.parentNode.parentNode.classList);
 })
 
