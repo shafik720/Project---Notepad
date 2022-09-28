@@ -28,3 +28,16 @@ body{
     background: #742365;
     color: white;
 }
+
+
+.note{
+    position: relative;
+}
+.cardFooter{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 6px;
+    border-top: 2px solid #74236593;
+}
