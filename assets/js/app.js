@@ -12,12 +12,15 @@ saveBtn.addEventListener('click',function(){
     div.classList.add('col-lg-4');
     if(noteTitle.value || noteBody.value){
       div.innerHTML = `
-      <div class=" border border-3 rounded p-3 h-100">
-        <div class="note ">
+      <div class=" border border-3 rounded p-3 h-100 mb-5 note">
+        <div class=" ">
           <h4>${noteTitle.value}</h4>
           <hr>
           <p>${noteBody.value}</p>
         </div>
+            <div class="cardFooter">
+                  <button type="button" class="btn btn-primary">Delete</button>
+            </div>
       </div>
     `;
     row.appendChild(div);
