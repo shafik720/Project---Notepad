@@ -23,3 +23,8 @@ body{
     background-color: white;
     color: #742365;
 }
+
+#saveBtn{
+    background: #742365;
+    color: white;
+}
