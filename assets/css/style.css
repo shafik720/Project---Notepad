@@ -79,31 +79,33 @@ body{
 }
 .settings{
     position: relative;
+    color: #ccc;
     cursor: pointer;
+    
 }
 .settings .menu{
-    position: absolute;
-    width: 140px;
     background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border-radius: 5px; 
+    position: absolute;
     bottom: 0;
-    right: 10px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.5);
-    border-radius: 5px;
+    right: 10px;  
     transform: scale(0);
+    transition: all 0.2s;
     transform-origin: bottom right;
-    transition: all 0.2s ;
 }
 .settings:hover .menu{
     transform: scale(1);
 }
-.menu div{
+.menu span{
+    display: block;
     padding: 15px 20px;
-    cursor: pointer;
-    transition: all 0.2s ;
+    width: 120px;
+    cursor: pointer; 
 }
-.menu div:hover{
+.menu span:hover{
     background: #ccc;
 }
-.menu div i{
+.menu span i{
     padding-right: 10px;
 }
